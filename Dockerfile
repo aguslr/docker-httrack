@@ -5,6 +5,7 @@ FROM docker.io/${BASE_IMAGE}
 ENV PUID=0
 ENV PGID=0
 ENV DATA=/root/websites
+ENV PORT=8080
 
 RUN <<-EOT sh
 	set -eu
