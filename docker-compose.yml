@@ -1,0 +1,14 @@
+version: '2.4'
+
+services:
+  webhttrack:
+    container_name: webhttrack
+    build:
+      context: .
+    restart: unless-stopped
+    volumes:
+      - ./data:/root/websites
+    environment:
+      - DATA=/data
+    ports:
+      - 8080:8080/tcp
