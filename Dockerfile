@@ -12,7 +12,7 @@ RUN <<-EOT sh
 
 	apt-get update
 	env DEBIAN_FRONTEND=noninteractive \
-		apt-get install -y --no-install-recommends httrack webhttrack supervisor \
+		apt-get install -y --no-install-recommends curl httrack webhttrack supervisor \
 		-o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold"
 	apt-get clean && rm -rf /var/lib/apt/lists/* /var/lib/apt/lists/*
 
