@@ -36,6 +36,7 @@ The image is configured using environment variables passed at runtime:
 | `PGID`    | GID for the user to run the command | `root`           | N        |
 | `DATA`    | Path for mirror/logfiles+cache      | `/root/websites` | N        |
 | `PORT`    | Port for the server to listen on    | 8080             | N        |
+| `ARGS`    | Arguments to pass to HTTrack        | EMPTY            | N        |
 
 
 Build locally
