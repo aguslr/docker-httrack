@@ -7,7 +7,7 @@ services:
       context: .
     restart: unless-stopped
     volumes:
-      - ./data:/root/websites
+      - ./data:/var/www/websites
     environment:
       - DATA=/data
     ports:
